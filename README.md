@@ -16,6 +16,6 @@ None yet
 How to install:
 
 Take "stop_watch" and add it to your resource folder, then add
-ensure StopWatch
+ensure stop_watch
 or
-start StopWatch
+start stop_watch
