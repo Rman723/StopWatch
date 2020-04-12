@@ -76,34 +76,3 @@ function started()
     args = {"Your timer has started for ".. time .. " seconds"}
     })
 end
---little menu thing
-Citizen.CreateThread(function()
-    if on == 1 then
-        Citizen.Wait(0)
-        local timers = timestop
-        onScreen("~r~time: ~w~"..timers.."", 100.0,100.0)
-    else
-        Citizen.Wait(0)
-        local timers = timestop
-        onScreen("~r~time: ~w~"..timers.."", 0.9,0.8)
-    end
-end)
-
-
-
-function onScreen(content,x,y)
-    SetTextFont(4)
-    SetTextProportional(0)
-    SetTextScale(0.5, 0.5)
-    SetTextEntry("STRING")
-    AddTextComponentString(content)
-    DrawText(x+0.004, y-0.057)
-    DrawRect(x+0.05, y-0.037, 0.100, 0.043,0,0,0,100)
-    DrawRect(x, y-0.037, 0.0028, 0.043,255,30,30,255)
-end
- 
-function notify(msg)
-    SetNotificationTextEntry("STRING")
-    AddTextComponentString(msg)
-    DrawNotification(true, false)
-end
