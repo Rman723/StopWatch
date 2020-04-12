@@ -15,7 +15,7 @@ None yet
 
 How to install:
 
-Take "StopWatch" and add it to your resource folder, then add
+Take "Stop_Watch" and add it to your resource folder, then add
 ensure StopWatch
 or
 start StopWatch
